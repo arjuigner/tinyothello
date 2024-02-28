@@ -279,31 +279,6 @@ def get_flips(black, white, side, move):
 #TABLE = gen_table()
 #np.save('data/move_gen_table.npy', TABLE)
 
-'''
-position = BBPosition()
-move_history = []
-while True:
-    cmd = input('>')
-    if cmd.split()[0] == 'move':
-        col = ord(cmd.split()[1][0]) - ord('a') + 1
-        row = int(cmd.split()[1][1])
-        m = (row - 1) * 8 + col - 1
-        print(m)
-        legal, flip = position.is_legal_move(m)
-        if legal:
-            position = position.make_move(m, flip)
-            print(position)
-            move_history.append((m, flip))
-        else:
-            print("Illegal move")
-    elif cmd == 'undo':
-        if move_history:
-            m, flip = move_history.pop()
-            position = position.undo_move(m, flip)
-            print(position)
-        else:
-            print("No move to undo")
-'''
 
 '''
 from game import Position, start_pos

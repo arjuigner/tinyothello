@@ -226,6 +226,7 @@ def battle_of_depths(d1, d2, n_games):
 ###############################################################################
         
 #Basic interface where the user has the following commands :
+help = '''
 # quit : quit
 # new : new game
 # mode <i> : i=1,2,3 indicate whether you play both sides (i=1), or 'X' (i=2), or 'O' (i=3)
@@ -234,6 +235,8 @@ def battle_of_depths(d1, d2, n_games):
 # undo : undo the last move
 # eval : evaluate the current position.
 # battle : start a battle between ComputerPlayer and RandomPlayer
+# help : print this message
+'''
 
 if __name__ == "__main__":
     position = BBPosition()
@@ -249,6 +252,8 @@ if __name__ == "__main__":
         cmd = input("Enter command : ")
         if cmd == 'quit':
             break
+        if cmd == 'help':
+            print(help)
         if cmd == 'new':
             position = BBPosition()
             print(position)
@@ -298,6 +303,6 @@ if __name__ == "__main__":
             
 
         if cmd == 'battle':
-            #battle(computer, RandomPlayer(), 10)
-            battle_of_depths(2, 4, 10)
+            battle(computer, RandomPlayer(), 10)
+            #battle_of_depths(2, 4, 10)
 
