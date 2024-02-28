@@ -1,0 +1,5 @@
+>nboard 2
+>set game (;GM[Othello]PC[NBoard]DT[2024-02-18 11:20:15 GMT]PB[]PW[]RE[?]TI[5:00]TY[8]BO[8 ---------------------------O*------*O--------------------------- *];)
+>set depth 4
+>ping 1
+>hint 4
